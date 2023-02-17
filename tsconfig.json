@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		// module
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "NodeNext",
+		"isolatedModules": true,
+		"lib": ["ESNext"],
+
+		// paths
+		"paths": {
+			"@components/*": [
+				"./src/components/*"
+			]
+		},
+
+		// jsx
+		"jsx": "react",
+		"jsxFactory": "h",
+		"jsxFragmentFactory": "Fragment",
+
+		// emit
+		"noEmit": true, // since code will be emitted by ESBuild
+		"forceConsistentCasingInFileNames": true,
+
+		// checks
+		"strict": true,
+		"skipLibCheck": true
+	},
+	"include": [
+		"src/**/*"
+	]
+}
